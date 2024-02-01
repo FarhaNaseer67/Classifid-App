@@ -19,7 +19,7 @@
             <header class="header bg-primary">
                 <nav>
                     <div class="logo">
-                        <a href="index.html">Final Project - <span>FN</span></a>
+                        <a href="index.php">Final Project - <span>FN</span></a>
                     </div>
                     <input type="checkbox" id="menu-toggle">
                     <label for="menu-toggle" class="menu-icon">&#9776;</label>
@@ -36,15 +36,24 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5 fw-bolder text-primary" id="staticBackdropLabel">Log In</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="login-email" class="form-label fw-bold">Email</label>
+                                    <input id="login-email" type="email" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label for="login-password" class="form-label fw-bold">Password</label>
+                                    <input id="login-password" type="password" class="form-control">
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
+                            <button type="button" class="btn btn-primary" onclick="login();" >Log In</button>
                         </div>
                     </div>
                 </div>
